@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 28em;
+    height: 28em;
+    border: 2px solid white;
+}
+
+.container[data-name="one"] {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.container[data-name="two"] {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.container[data-name="three"] {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.container[data-name="four"] {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.container[data-name="five"] {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.container[data-name="six"] {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.container[data-name="seven"] {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.container[data-name="height"] {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.container[data-name="nine"] {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.case {
+    background-color: #131313;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.case:hover {
+    background-color: #BBBBBB;
+}
+
+.container-buttons {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+button {
+    width: 6em;
+    height: 3em;
+    background-color: #BBBBBB;
+    border: 1px solid #131313;
+    border-radius: 6px;
+    cursor: pointer;
+}
+

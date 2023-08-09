@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <h2 class="win"></h2>
+    <div class="container-buttons">
+        <button onclick="gameBoard.players()">Start</button>
+        <button onclick="gameBoard.clear(); gameBoard.players()">Restart</button>
+    </div>
+    <div class="container">
+        <div class="case" id="0" data-name="one" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="1" data-name="two" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="2" data-name="three" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="3"  data-name="four" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="4"  data-name="five" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="5"  data-name="six" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="6"  data-name="seven" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="7"  data-name="height" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+        <div class="case" id="8" data-name="nine" onclick="gameBoard.affichage(); gameBoard.content(this.id); gameBoard.win()"></div>
+    </div>
+</body>
+</html>
